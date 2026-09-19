@@ -17,3 +17,6 @@ credentials.json
 # os assets versionados vivem em assets/ e sao JPG.
 # PNG grande de geracao nao entra: converta antes.
 *.png
+
+# JPGs temporarios que o wpp_media.py gera antes de enviar.
+scripts/wpp_tmp/
