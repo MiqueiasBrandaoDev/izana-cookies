@@ -28,8 +28,8 @@ Histórico de nome: `Cookies da Izana` → **`Izana Cookies`** (19/09/2026, deci
 | Item | Valor | Estado |
 |------|-------|--------|
 | Nome | **Izana Cookies** (nessa ordem) | Decidido 19/09/2026, sujeito a troca |
-| Tipografia do nome | ver a logo (seção 1.1) | 10 alternativas em `assets/banners/v4-fontes/` |
-| Símbolo / logo desenhado | **existe**, ver seção 1.1 | **temporária** (19/09/2026) |
+| Tipografia do nome | a da logo: sans arredondada pesada, tipo groovy/retrô | arquivo em mãos desde 19/09/2026; 10 alternativas em `assets/banners/v4-fontes/` |
+| Símbolo / logo desenhado | não há símbolo separado — a logo é wordmark, com os dois "o" de "cookies" virando cookies | **temporária** (19/09/2026) |
 | Cor de fundo | `#F6E8D8` creme | **PENDENTE** de confirmação (usada nos testes) |
 | Cor da marca | `#5A2E1B` chocolate | **PENDENTE** de confirmação (usada nos testes) |
 | Cidade / praça | — | **PENDENTE** |
@@ -39,25 +39,34 @@ Registro no INPI: **fora de escopo** por decisão do Miquéias (19/09/2026). Nã
 
 ### 1.1 A logo — **temporária**
 
-Recebida em 19/09/2026 e declarada **temporária** pelo Miquéias. Vai ser trocada; não
-trate como identidade fechada e não gere aplicação definitiva em cima dela sem perguntar.
+Arquivo recebido da Ana Carla em 19/09/2026 e salvo em
+`assets/logo/logo-izana-cookies-temporaria.jpg` (1280×1280, JPG).
+Continua **temporária**: vai ser trocada, não é identidade fechada e não se gera aplicação
+definitiva em cima dela sem perguntar.
 
-Arquivo: `assets/logo/` — **PENDENTE de receber o arquivo original**.
+Composição do arquivo recebido — **é um wordmark, sem símbolo desenhado**:
 
-Composição, descrita a partir da imagem:
+- **"IZANA"** na primeira linha, caixa alta, sans-serif muito pesada, arredondada, de bojo
+  largo e cantos cheios — tipo *groovy/retrô*, com as hastes engrossando nas pontas.
+- **"cookies"** na segunda linha, menor, caixa baixa, mesma família arredondada.
+- Os dois **"o"** de "cookies" são **cookies desenhados** — disco claro com gotas de
+  chocolate e contorno marrom. É o único elemento ilustrado da logo.
+- **Não é serif, não é manuscrita** — bate com a direção já aprovada.
 
-- **Símbolo:** duas meninas de rosto colado, olhos sorridentes fechados, segurando juntas
-  um cookie grande com gotas de chocolate. A da esquerda tem coque; a da direita, cabelo
-  solto ondulado com laço. Traço de ilustração com contorno grosso e cantos arredondados.
-- **Wordmark:** "Izana" na primeira linha, "Cookies" menor embaixo, ambos em sans-serif
-  muito pesada, arredondada e com bojo largo, caixa mista. **Não é serif e não é
-  manuscrita** — bate com a direção já aprovada.
-- **Cores:** vinho escuro dominante no traço e no texto, creme nos rostos e no cookie,
-  e dois acentos em respingos laterais — azul claro e vermelho.
-- **Fundo:** a versão recebida veio sobre preto.
+Cores medidas no arquivo:
 
-**PENDENTE:** medir os hex no arquivo original; versão com fundo transparente; versão
-monocromática para aplicação em uma cor só.
+| Papel | Hex |
+|---|---|
+| Fundo da versão recebida | `#BADCFF` azul-claro |
+| Letra e traço | `#622F2E` vinho escuro |
+
+**PENDENTE:** versão com fundo transparente; versão monocromática para aplicação em uma
+cor só; definir se o azul `#BADCFF` entra na paleta da marca ou se era só o fundo do arquivo.
+
+**Histórico — logo anterior (descrita em 19/09/2026, substituída no mesmo dia):** duas
+meninas de rosto colado segurando juntas um cookie grande, traço de contorno grosso, sobre
+fundo preto, com respingos azul e vermelho. O arquivo dela nunca chegou. A versão que vale
+é a de cima.
 
 Enquanto a logo for a temporária, os hex de fundo e de marca da tabela acima continuam
 sendo os dos testes, não os da logo.
