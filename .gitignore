@@ -1,0 +1,11 @@
+﻿__pycache__/
+*.pyc
+assets/
+referencia*/
+*.png
+*.jpg
+*.jpeg
+*.mp4
+*.m4a
+*.mp3
+credentials.json
