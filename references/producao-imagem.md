@@ -187,6 +187,22 @@ Para banner, acrescente `Leave generous empty background in the TOP HALF for typ
 
 ## Parte 3 — Gerar a peça gráfica
 
+### 3.0 Antes de tudo: a peça leva texto mesmo?
+
+**Post e story não levam texto na arte.** O que o Miquéias dita na conversa — "Hoje tem
+feira", endereço, horário — é **legenda**, e legenda não é desenhada na imagem. Gere só a
+fotografia e entregue o texto separado, pronto para copiar e colar.
+
+Motivo: a foto sem data e sem endereço serve na semana seguinte. Texto cravado na imagem
+joga a peça fora junto com o recado.
+
+Texto na arte é para **peça impressa** — banner, cardápio, etiqueta — e aí vale a seção 2
+de `marca.md`. Na dúvida entre post e peça impressa, pergunte.
+
+Quando for mesmo compor texto, **componha por cima da foto com uma fonte de verdade**
+(PIL + `C:\Windows\Fonts\ARLRDBD.TTF`, Arial Rounded MT Bold, que é a família da logo) em
+vez de deixar o modelo de imagem desenhar as letras: é o que garante grafia e acento.
+
 ### 3.1 Só o texto aprovado
 
 O modelo adiciona slogan sozinho se você deixar espaço. Feche a porta:

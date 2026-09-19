@@ -93,6 +93,13 @@ A marca é o maior elemento da peça; as duas linhas de cima são subordinadas a
 - **Sem claim de processo.** Não é feito na hora; não escrever que é.
 - **Genérico e permanente.** A banca troca de sabor; a peça não pode depender de um.
 - **Copy nova é aprovada pelo Miquéias ANTES de virar imagem.**
+- **O que foi dito para a legenda NÃO entra na arte.** (19/09/2026) Quando ele escrever o
+  texto do post na conversa — "Hoje tem feira", endereço, horário, o que for — aquilo é
+  **legenda**. A imagem fica só com a fotografia. Ele não precisa repetir "isso é legenda"
+  a cada peça: se o texto veio ditado no pedido, o lugar dele é a legenda.
+  **Motivo:** a foto sem data e sem endereço serve na semana seguinte; a legenda se
+  reescreve em dez segundos. Texto cravado na imagem joga a peça fora junto com o recado.
+  Peça impressa (banner, cardápio, etiqueta) é outra coisa e segue a seção 2.
 
 ---
 
