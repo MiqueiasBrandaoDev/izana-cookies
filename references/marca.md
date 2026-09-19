@@ -38,8 +38,12 @@ Histórico de nome: `Cookies da Izana` → **`Izana Cookies`** (19/09/2026, deci
 Registro no INPI: **fora de escopo** por decisão do Miquéias (19/09/2026). Não levantar de novo.
 
 ### Dona e decisão
-Izana é a dona e decide. O Miquéias opera e aprova a copy antes de virar arte.
+Izana é a dona e decide — inclusive operando a skill sozinha, na máquina dela.
+O Miquéias opera também e aprova a copy antes de virar arte.
 Toda peça pronta vai para os dois pelo WhatsApp.
+
+Quando a Izana decidir algo (nome, fonte, cor, sabor novo, preço), registre aqui na hora,
+com a data, e avise o Miquéias na próxima conversa com ele.
 
 ---
 

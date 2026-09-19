@@ -26,19 +26,47 @@ git -C ~/.claude/skills/izana-cookies pull
 
 ## O que a máquina precisa ter
 
-| Item | Para quê | Como conferir |
-|------|----------|---------------|
-| Python 3 | scripts | `python --version` |
-| `requests`, `Pillow` | geração e envio | `pip install requests pillow` |
-| `yt_dlp` (módulo) | baixar referência de URL | `python -m yt_dlp --version` |
-| `ffmpeg` e `ffprobe` no PATH | fatiar vídeo, montar mosaico | `ffmpeg -version` |
-| `curl` | transcrição | já vem no Windows 10+ |
-| Cofre de credenciais | chave da OpenAI e da Evolution | `~/.claude/credentials.json` |
+| Item | Para quê | Obrigatório | Como conferir |
+|------|----------|-------------|---------------|
+| Python 3 | scripts | sim | `python --version` |
+| `requests` | geração | sim | `pip install requests` |
+| Chave da OpenAI no cofre | gerar imagem e transcrever | sim | ver abaixo |
+| `ffmpeg` e `ffprobe` no PATH | fatiar vídeo, montar mosaico | só para referência em vídeo | `ffmpeg -version` |
+| `yt_dlp` (módulo) | baixar referência de URL | só para referência de link | `python -m yt_dlp --version` |
+| `curl` | transcrição | só para transcrever | já vem no Windows 10+ |
+| `Pillow` | envio por WhatsApp | só para o envio | `pip install pillow` |
+| Evolution no cofre | envio por WhatsApp | só para o envio | ver abaixo |
 
-O cofre **não** vai neste repositório. Na máquina nova ele precisa ter a chave
-`openai.core-resumefy` e o bloco `evolution` com `url` e `api_key`.
+### Cofre
 
-Para o envio pelo WhatsApp, a máquina também precisa de `~/.claude/scripts/wpp_media.py`.
+O cofre **não** vai neste repositório. Fica em `~/.claude/credentials.json`
+(`%USERPROFILE%\.claude\credentials.json` no Windows). O mínimo para a skill funcionar:
+
+```json
+{
+  "openai": {
+    "keys": [
+      { "name": "core-resumefy", "key": "sk-proj-...", "used_in": ["izana-cookies"] }
+    ]
+  }
+}
+```
+
+Para habilitar também o envio por WhatsApp, acrescente:
+
+```json
+{
+  "evolution": { "url": "https://...", "api_key": "..." },
+  "whatsapp_destinos": { "miqueias": "<jid>@g.us", "izana": "<jid>@s.whatsapp.net" }
+}
+```
+
+Sem esses dois blocos a skill continua funcionando: ela gera normalmente e entrega os
+arquivos localmente, sem tentar enviar.
+
+Se o arquivo já existir na máquina, **mescle os blocos** em vez de substituir.
+Salve como **UTF-8 sem BOM** — com BOM o Python não lê o cofre. No PowerShell, não use
+`Out-File` nem `Set-Content` para editá-lo: eles gravam BOM.
 
 ## Estrutura
 

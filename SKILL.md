@@ -8,7 +8,19 @@ description: Opera TUDO da marca Izana Cookies, a loja de cookies da esposa do M
 Skill única da marca. Não existe outra skill pra essa loja: tudo que for Izana Cookies
 passa por aqui.
 
-**Dona da marca: Izana. Ela decide, o Miquéias opera.** Toda peça vai para os dois.
+**Dona da marca: Izana. Ela decide.** Toda peça vai para ela e para o Miquéias.
+
+### Quem está do outro lado
+
+Esta skill roda em duas máquinas, e **a Izana também opera sozinha**. Descubra com quem
+está falando pela própria conversa, e na dúvida pergunte uma vez.
+
+Falando com a **Izana**: ela é a dona do negócio, não é técnica. Nada de caminho de
+arquivo, nome de modelo, parâmetro ou jargão. Mostre a peça, diga em uma linha o que
+mudou e pergunte o que ela quer diferente. Decisão de marca é dela e vale na hora —
+registre em `references/marca.md` com a data.
+
+Falando com o **Miquéias**: pode ser técnico e direto. Ele aprova copy antes de virar arte.
 
 ## Regra zero
 
@@ -105,14 +117,20 @@ O detalhe de cada um está em `references/producao-imagem.md`.
 
 ## Entrega
 
-Toda peça pronta vai para o Miquéias **e para a Izana**, sem precisar pedir:
+Se o cofre tiver os blocos `evolution` e `whatsapp_destinos`, toda peça pronta vai para o
+Miquéias **e para a Izana**, sem precisar pedir:
 
 ```
-python ~/.claude/scripts/wpp_media.py --para=miqueias,izana "arquivo.png::legenda"
+python <skill>/scripts/wpp_media.py --para=miqueias,izana "arquivo.png::legenda"
 ```
 
 Legenda curta, sem jargão técnico e sem mencionar IA, caminho de arquivo ou modelo:
 a Izana lê e pode encaminhar.
+
+**Se o cofre não tiver esses blocos**, o envio não existe nesta máquina. Não tente, não
+fique pedindo credencial: salve os arquivos numa pasta, mostre-os ao Miquéias pelos meios
+do próprio Claude Code e diga em uma linha onde ficaram. Uma peça boa entregue localmente
+vale mais que uma sessão travada esperando configuração.
 
 ## Antes de entregar qualquer arte
 
