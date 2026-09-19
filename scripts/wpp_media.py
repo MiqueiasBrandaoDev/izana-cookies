@@ -7,7 +7,8 @@ import base64, json, os, sys, time
 import requests
 from PIL import Image
 
-CREDS = json.load(open(r"C:\Users\mique\.claude\credentials.json", encoding="utf-8"))
+CREDS = json.load(open(os.path.join(os.environ.get("USERPROFILE", os.path.expanduser("~")),
+                                    ".claude", "credentials.json"), encoding="utf-8"))
 BASE = CREDS["evolution"]["url"].rstrip("/")
 KEY = CREDS["evolution"]["api_key"]
 INSTANCE = "esim-miqueias"
