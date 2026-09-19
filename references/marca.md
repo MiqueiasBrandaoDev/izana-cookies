@@ -123,6 +123,7 @@ Argumento de venda: **a maioria dos cookies tem recheio dentro.**
 | Chocolate com creme de avelã | massa de chocolate, swirl brilhante no topo, gotas de chocolate | `assets/referencias/foto-real-cookie-nutella.jpg` |
 | Creme branco | massa dourada com gotas, recheio branco cremoso e abundante, polvilhado por cima | `assets/referencias/foto-real-cookie-creme-branco.jpg` |
 | Chocolate com wafer branco | massa de chocolate, barra de wafer branco e chocolate ao leite no topo | só em vídeo de baixa resolução |
+| Cookies e creme | massa clara com pedaço de biscoito preto e gotas de chocolate; dentro, biscoito inteiro, chocolate branco e creme branco que escorre | entrou em 19/09/2026 por decisão da Ana Carla, a partir de `marketing/referencias/ref-02/`; ficha em `marketing/produto/fichas-tecnicas/cookie-cookies-e-creme.md`. Nome comercial **PENDENTE** |
 
 **PENDENTE:** catálogo completo com o nome comercial de cada sabor.
 
