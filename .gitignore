@@ -4,9 +4,11 @@ __pycache__/
 # credenciais nunca
 credentials.json
 
-# saidas de trabalho: referencia baixada e peca gerada na hora
-referencia*/
-saida/
+# saidas de trabalho: referencia baixada e peca gerada na hora.
+# A barra inicial ancora na raiz — sem ela isto engolia assets/referencias/,
+# que sao as fotos reais do produto e PRECISAM estar versionadas.
+/referencia*/
+/saida/
 *.mp4
 *.m4a
 *.mp3
