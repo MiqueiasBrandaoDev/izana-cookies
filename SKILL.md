@@ -92,16 +92,20 @@ e tire a marcação.
 
 | O quê | Onde |
 |-------|------|
-| Contexto da marca | `references/marca.md` (dentro da skill) |
+| Contexto da marca | `references/marca.md` |
 | Método de produção de imagem | `references/producao-imagem.md` |
 | Captura de referência (URL ou vídeo) | `scripts/referencia.py` |
 | Geração de imagem | `scripts/gerar.py` |
-| Fotos, banners e referências | pasta de assets, ver abaixo |
+| Fotos reais do produto | `assets/referencias/` |
+| Fotos de produto geradas | `assets/produto/` |
+| Banners por rodada | `assets/banners/` |
 
-Os assets ficam fora da skill por peso (cerca de 150 MB). Na máquina do Miquéias estão em
-`D:\documentos\PROJETOS_AIOS\izana-cookies\assets\`. Em outra máquina, procure a pasta
-`izana-cookies` no diretório de projetos; se não achar, pergunte onde está em vez de
-gerar tudo do zero.
+**Os assets vêm junto com a skill**, em JPG. Não é preciso procurar pasta nenhuma nem
+copiar nada à mão: depois do clone está tudo lá. Veja `assets/README.md` para saber qual
+arquivo serve para quê.
+
+Ao gerar, **sempre passe as fotos de `assets/referencias/` em `image[]`**. Sem elas o
+modelo inventa um cookie genérico, que não é o produto da Izana.
 
 As pastas de banners reprovados são propositais: cada uma registra um erro que não deve voltar.
 

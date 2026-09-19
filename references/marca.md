@@ -28,14 +28,39 @@ Histórico de nome: `Cookies da Izana` → **`Izana Cookies`** (19/09/2026, deci
 | Item | Valor | Estado |
 |------|-------|--------|
 | Nome | **Izana Cookies** (nessa ordem) | Decidido 19/09/2026, sujeito a troca |
-| Tipografia do nome | — | **PENDENTE** — 10 opções em `assets/banners/v4-fontes/` |
-| Símbolo / logo desenhado | — | **PENDENTE** — não se sabe se existe |
+| Tipografia do nome | ver a logo (seção 1.1) | 10 alternativas em `assets/banners/v4-fontes/` |
+| Símbolo / logo desenhado | **existe**, ver seção 1.1 | **temporária** (19/09/2026) |
 | Cor de fundo | `#F6E8D8` creme | **PENDENTE** de confirmação (usada nos testes) |
 | Cor da marca | `#5A2E1B` chocolate | **PENDENTE** de confirmação (usada nos testes) |
 | Cidade / praça | — | **PENDENTE** |
 | @ do Instagram | — | **PENDENTE** |
 
 Registro no INPI: **fora de escopo** por decisão do Miquéias (19/09/2026). Não levantar de novo.
+
+### 1.1 A logo — **temporária**
+
+Recebida em 19/09/2026 e declarada **temporária** pelo Miquéias. Vai ser trocada; não
+trate como identidade fechada e não gere aplicação definitiva em cima dela sem perguntar.
+
+Arquivo: `assets/logo/` — **PENDENTE de receber o arquivo original**.
+
+Composição, descrita a partir da imagem:
+
+- **Símbolo:** duas meninas de rosto colado, olhos sorridentes fechados, segurando juntas
+  um cookie grande com gotas de chocolate. A da esquerda tem coque; a da direita, cabelo
+  solto ondulado com laço. Traço de ilustração com contorno grosso e cantos arredondados.
+- **Wordmark:** "Izana" na primeira linha, "Cookies" menor embaixo, ambos em sans-serif
+  muito pesada, arredondada e com bojo largo, caixa mista. **Não é serif e não é
+  manuscrita** — bate com a direção já aprovada.
+- **Cores:** vinho escuro dominante no traço e no texto, creme nos rostos e no cookie,
+  e dois acentos em respingos laterais — azul claro e vermelho.
+- **Fundo:** a versão recebida veio sobre preto.
+
+**PENDENTE:** medir os hex no arquivo original; versão com fundo transparente; versão
+monocromática para aplicação em uma cor só.
+
+Enquanto a logo for a temporária, os hex de fundo e de marca da tabela acima continuam
+sendo os dos testes, não os da logo.
 
 ### Dona e decisão
 Izana é a dona e decide — inclusive operando a skill sozinha, na máquina dela.

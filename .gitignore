@@ -1,11 +1,17 @@
-﻿__pycache__/
+__pycache__/
 *.pyc
-assets/
+
+# credenciais nunca
+credentials.json
+
+# saidas de trabalho: referencia baixada e peca gerada na hora
 referencia*/
-*.png
-*.jpg
-*.jpeg
+saida/
 *.mp4
 *.m4a
 *.mp3
-credentials.json
+*.webm
+
+# os assets versionados vivem em assets/ e sao JPG.
+# PNG grande de geracao nao entra: converta antes.
+*.png
