@@ -29,8 +29,8 @@ Histórico de nome: `Cookies da Izana` → **`Izana Cookies`** (19/09/2026, deci
 |------|-------|--------|
 | Nome | **Izana Cookies** (nessa ordem) | Decidido 19/09/2026, sujeito a troca |
 | Tipografia do nome | a da logo: sans arredondada pesada, tipo groovy/retrô | arquivo em mãos desde 19/09/2026; 10 alternativas em `assets/banners/v4-fontes/` |
-| Símbolo / logo desenhado | não há símbolo separado — a logo é wordmark, com os dois "o" de "cookies" virando cookies | **temporária** (19/09/2026) |
-| Cor da marca (azul) | `#BADCFF` azul-claro | adotado 19/09/2026, aguarda confirmação escrita da Izana |
+| Símbolo / logo desenhado | não há símbolo separado — a logo é wordmark, com os dois "o" de "cookies" virando cookies, o segundo mordido, gotas em coração | **aprovada** 19/09/2026 |
+| Cor da marca (azul) | `#BADCFF` azul-claro | confirmado 19/09/2026 ao aprovar a logo |
 | Cor da marca (traço) | `#622F2E` vinho escuro | adotado 19/09/2026, é a cor da letra da logo |
 | Cor de apoio | `#F6E8D8` creme | usada no kit v2 |
 | Cor de apoio | `#8B5A3C` chocolate médio | usada nas gotas e ilustrações |
@@ -79,8 +79,13 @@ mudanças:
   legível como letra "o"; o primeiro fica inteiro;
 - **toda gota de chocolate vira um coraçãozinho**, na logo e em todo o material derivado.
 
-Três versões em `marketing/marca/identidade-v2/` (op1, op2, op3), aguardando a escolha dela.
-A **op1** foi a base usada para gerar o resto do kit.
+**APROVADA pela Ana Carla em 19/09/2026.** O arquivo que vale é
+`marketing/marca/logo-izana-cookies-APROVADA.png`, copiado também para
+`assets/logo/logo-izana-cookies-v3-aprovada.png`. Ela é o arquivo original dela com duas
+edições: as gotas viraram coração e o segundo cookie ganhou a mordida. Nada mais mudou.
+
+Todo o kit foi regerado em cima dela: folha de ilustrações, sacola, adesivo, as duas
+embalagens, avental, fachada e flat-lay.
 
 O **azul `#BADCFF` entra na paleta** por essa mesma decisão — ela pediu o kit inteiro a
 partir da logo azul. Confirmação escrita ainda pendente.
