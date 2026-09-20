@@ -91,6 +91,28 @@ logo inteira (plaquinha da fachada, adesivo, padronagem).
 **Mascote:** duas propostas geradas, ambas o próprio cookie com rosto, bochecha rosada e
 gotas em coração — uma inteira e uma mordida. Escolha **PENDENTE**.
 
+### 1.2.1 Mexer na logo é editar o arquivo, não redesenhar (19/09/2026)
+
+Pedido da Ana Carla: os cookies da logo têm de continuar **exatamente** como estão, mudando
+só as gotas e a mordida. Por isso a versão v3 não é gerada por modelo de imagem — o script
+`marketing/marca/identidade-v2/_logo_v3.py` abre o arquivo original, troca as 14 gotas por
+corações no mesmo centro e tamanho, recorta a mordida, e deixa **o resto pixel a pixel
+igual**. Cores e espessura são medidas do próprio arquivo.
+
+Modelo de imagem serve para aplicação — mockup, foto, peça. Para a marca em si ele aproxima,
+e aproximar uma logo é perdê-la.
+
+Três versões em `marketing/marca/identidade-v2/logo-v3-mordida-{1-menor,2-media,3-maior}.png`,
+aguardando a escolha dela.
+
+### 1.2.2 A padronagem miúda (19/09/2026)
+
+A família de desenhinhos de linha — cookies, as duas irmãs, pilha com laço, flores, corações
+e os pacotes de ingrediente — é a **textura da marca**. Aparece miúda e repetida na lateral
+da sacola, no adesivo comprido e no papel manteiga, sempre no vinho `#622F2E`, nunca no
+chocolate claro. Em miniatura os pacotes vão **sem rótulo**: texto minúsculo é onde a grafia
+quebra, e naquela escala não se lê mesmo.
+
 ### 1.3 Embalagem — regra permanente (19/09/2026)
 
 Embalagem de cookie **não esconde e não encosta no recheio de cima**. Base baixa de papelão
