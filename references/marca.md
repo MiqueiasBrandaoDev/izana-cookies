@@ -30,8 +30,10 @@ Histórico de nome: `Cookies da Izana` → **`Izana Cookies`** (19/09/2026, deci
 | Nome | **Izana Cookies** (nessa ordem) | Decidido 19/09/2026, sujeito a troca |
 | Tipografia do nome | a da logo: sans arredondada pesada, tipo groovy/retrô | arquivo em mãos desde 19/09/2026; 10 alternativas em `assets/banners/v4-fontes/` |
 | Símbolo / logo desenhado | não há símbolo separado — a logo é wordmark, com os dois "o" de "cookies" virando cookies | **temporária** (19/09/2026) |
-| Cor de fundo | `#F6E8D8` creme | **PENDENTE** de confirmação (usada nos testes) |
-| Cor da marca | `#5A2E1B` chocolate | **PENDENTE** de confirmação (usada nos testes) |
+| Cor da marca (azul) | `#BADCFF` azul-claro | adotado 19/09/2026, aguarda confirmação escrita da Izana |
+| Cor da marca (traço) | `#622F2E` vinho escuro | adotado 19/09/2026, é a cor da letra da logo |
+| Cor de apoio | `#F6E8D8` creme | usada no kit v2 |
+| Cor de apoio | `#8B5A3C` chocolate médio | usada nas gotas e ilustrações |
 | Cidade / praça | — | **PENDENTE** |
 | @ do Instagram | — | **PENDENTE** |
 
@@ -61,15 +63,39 @@ Cores medidas no arquivo:
 | Letra e traço | `#622F2E` vinho escuro |
 
 **PENDENTE:** versão com fundo transparente; versão monocromática para aplicação em uma
-cor só; definir se o azul `#BADCFF` entra na paleta da marca ou se era só o fundo do arquivo.
+cor só.
 
 **Histórico — logo anterior (descrita em 19/09/2026, substituída no mesmo dia):** duas
 meninas de rosto colado segurando juntas um cookie grande, traço de contorno grosso, sobre
-fundo preto, com respingos azul e vermelho. O arquivo dela nunca chegou. A versão que vale
-é a de cima.
+fundo preto, com respingos azul e vermelho. O arquivo dela nunca chegou. A duas irmãs de
+mãos no mesmo cookie voltou no kit v2, como ilustração de linha, não como logo.
 
-Enquanto a logo for a temporária, os hex de fundo e de marca da tabela acima continuam
-sendo os dos testes, não os da logo.
+### 1.2 Logo v2 — mordida e gotas em coração (19/09/2026)
+
+Pedido da Ana Carla: manter o wordmark e os dois "o" de cookies virando cookies, com duas
+mudanças:
+
+- o **segundo cookie leva uma mordida** arredondada na borda superior direita, continuando
+  legível como letra "o"; o primeiro fica inteiro;
+- **toda gota de chocolate vira um coraçãozinho**, na logo e em todo o material derivado.
+
+Três versões em `marketing/marca/identidade-v2/` (op1, op2, op3), aguardando a escolha dela.
+A **op1** foi a base usada para gerar o resto do kit.
+
+O **azul `#BADCFF` entra na paleta** por essa mesma decisão — ela pediu o kit inteiro a
+partir da logo azul. Confirmação escrita ainda pendente.
+
+**O cookie mordido virou assinatura curta da marca:** serve para assinar peça pequena sem a
+logo inteira (plaquinha da fachada, adesivo, padronagem).
+
+**Mascote:** duas propostas geradas, ambas o próprio cookie com rosto, bochecha rosada e
+gotas em coração — uma inteira e uma mordida. Escolha **PENDENTE**.
+
+### 1.3 Embalagem — regra permanente (19/09/2026)
+
+Embalagem de cookie **não esconde e não encosta no recheio de cima**. Base baixa de papelão
+segurando o cookie e tampa transparente alta, com folga de ar entre o swirl e o plástico.
+Vale para qualquer embalagem futura: o topo brilhante é o produto.
 
 ### Dona e decisão
 Izana é a dona e decide — inclusive operando a skill sozinha, na máquina dela.
