@@ -76,8 +76,11 @@ Pedido da Ana Carla: manter o wordmark e os dois "o" de cookies virando cookies,
 mudanças:
 
 - o **segundo cookie leva uma mordida** arredondada na borda superior direita, continuando
-  legível como letra "o"; o primeiro fica inteiro;
-- **toda gota de chocolate vira um coraçãozinho**, na logo e em todo o material derivado.
+  legível como letra "o"; o primeiro fica inteiro. **Aprovada.**
+- gota em formato de coração: testada e **REPROVADA em 19/09/2026** — "deixou muito
+  infantil", palavras dela. **A gota é redonda**, como no arquivo original, na logo e em
+  todo o material. Coração só sobrevive como enfeite solto da padronagem, do mesmo jeito que
+  a florzinha, nunca como gota em cima de cookie.
 
 **APROVADA pela Ana Carla em 19/09/2026.** O arquivo que vale é
 `marketing/marca/logo-izana-cookies-APROVADA.png`, copiado também para
@@ -162,6 +165,10 @@ A marca é o maior elemento da peça; as duas linhas de cima são subordinadas a
   **Motivo:** a foto sem data e sem endereço serve na semana seguinte; a legenda se
   reescreve em dez segundos. Texto cravado na imagem joga a peça fora junto com o recado.
   Peça impressa (banner, cardápio, etiqueta) é outra coisa e segue a seção 2.
+- **Chamada aprovada para peça impressa (19/09/2026, pedida pela Ana Carla):**
+  `VEM VER POR DENTRO`, em caixa alta, abaixo das três linhas acima. É chamada, não frase
+  de impacto: convida a olhar em vez de vender com adjetivo, e não envelhece. Vale só para
+  esta frase — não reabre a porta para slogan.
 
 ---
 
@@ -182,6 +189,13 @@ Argumento de venda: **a maioria dos cookies tem recheio dentro.**
 
 **Sabores que a IA inventou e NÃO existem:** pistache, red velvet, biscoito tipo Lotus.
 Apareceram sozinhos em gerações de composição e foram removidos. Nunca reintroduzir.
+
+### Cookie partido — liberado quando o assunto é o recheio (19/09/2026)
+
+O padrão continua sendo o cookie inteiro. Na peça que **fala do recheio** — a lona, que diz
+"cookie recheado" —, o corte ao meio com o recheio escorrendo é o conteúdo da foto e pode
+entrar. O que foi reprovado na rodada `v2` não foi o corte: foi a massa seca e esfarelada.
+Com o corte, o bloco de textura vale dobrado.
 
 ---
 
