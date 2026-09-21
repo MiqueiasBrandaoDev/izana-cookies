@@ -187,21 +187,49 @@ Para banner, acrescente `Leave generous empty background in the TOP HALF for typ
 
 ## Parte 3 — Gerar a peça gráfica
 
-### 3.0 Antes de tudo: a peça leva texto mesmo?
+### 3.0 A peça sai pronta, com o texto dentro
 
-**Post e story não levam texto na arte.** O que o Miquéias dita na conversa — "Hoje tem
-feira", endereço, horário — é **legenda**, e legenda não é desenhada na imagem. Gere só a
-fotografia e entregue o texto separado, pronto para copiar e colar.
+**Post e story levam o texto na arte. Sempre.** O post tem que chegar pronto para subir:
+ela abre o Instagram, publica e acabou. Entregar a foto limpa e mandar o texto à parte
+para alguém escrever por cima **não é entregar o post** — é deixar o trabalho pela metade,
+justamente o trabalho que a dona da marca não tem tempo de fazer.
 
-Motivo: a foto sem data e sem endereço serve na semana seguinte. Texto cravado na imagem
-joga a peça fora junto com o recado.
+Isto vale para **toda** peça de rede social, inclusive quando o texto foi ditado na
+conversa: "Hoje tem feira", o dia, a chamada. O recado do dia é a razão de o post existir.
 
-Texto na arte é para **peça impressa** — banner, cardápio, etiqueta — e aí vale a seção 2
-de `marca.md`. Na dúvida entre post e peça impressa, pergunte.
+> Houve uma regra oposta, escrita em 19/09/2026, mandando o texto ditado ir só para a
+> legenda. **Foi revertida pelo Miquéias em 21/09/2026**, com estas palavras: *"o pôster
+> tem que vir pronto, esse negócio de o texto não vai na foto é completamente errado"*.
+> Não voltar a essa regra.
 
-Quando for mesmo compor texto, **componha por cima da foto com uma fonte de verdade**
-(PIL + `C:\Windows\Fonts\ARLRDBD.TTF`, Arial Rounded MT Bold, que é a família da logo) em
-vez de deixar o modelo de imagem desenhar as letras: é o que garante grafia e acento.
+Divisão entre arte e legenda:
+
+| Vai na arte | Vai na legenda |
+|---|---|
+| a chamada e o recado do dia | endereço |
+| a marca | horário |
+| — | preço e formas de pagamento |
+
+Endereço e horário ficam na legenda porque mudam e se corrigem em dez segundos, sem
+regerar imagem. Mas a **chamada tem que estar na arte**, senão não é post.
+
+A entrega é **arte + legenda juntas**, a legenda pronta para copiar e colar.
+
+**Peça impressa** — banner, cardápio, etiqueta — também leva texto, e aí vale a seção 2
+de `marca.md`: sem data, sem preço, sem escassez, porque fica pendurada meses.
+
+**Foto de produto** é a única que sai sem texto: é o bloco `SEM_TEXTO`, a foto limpa que
+depois recebe a composição. Nunca entregue essa foto como se fosse o post.
+
+### 3.0.1 Como o texto entra: composto, nunca pedido ao modelo
+
+**Componha por cima da foto com uma fonte de verdade** (PIL +
+`C:\Windows\Fonts\ARLRDBD.TTF`, Arial Rounded MT Bold, que é a família da logo), em vez de
+deixar o modelo de imagem desenhar as letras. É isso que garante grafia e acento: texto
+pedido ao modelo já saiu "rechado", sem o "e".
+
+Gere a foto limpa com `ESPACO_TIPOGRAFIA`, que deixa a metade de cima vazia, e escreva
+por cima em código.
 
 ### 3.1 Só o texto aprovado
 

@@ -158,13 +158,14 @@ A marca é o maior elemento da peça; as duas linhas de cima são subordinadas a
 - **Sem claim de processo.** Não é feito na hora; não escrever que é.
 - **Genérico e permanente.** A banca troca de sabor; a peça não pode depender de um.
 - **Copy nova é aprovada pelo Miquéias ANTES de virar imagem.**
-- **O que foi dito para a legenda NÃO entra na arte.** (19/09/2026) Quando ele escrever o
-  texto do post na conversa — "Hoje tem feira", endereço, horário, o que for — aquilo é
-  **legenda**. A imagem fica só com a fotografia. Ele não precisa repetir "isso é legenda"
-  a cada peça: se o texto veio ditado no pedido, o lugar dele é a legenda.
-  **Motivo:** a foto sem data e sem endereço serve na semana seguinte; a legenda se
-  reescreve em dez segundos. Texto cravado na imagem joga a peça fora junto com o recado.
-  Peça impressa (banner, cardápio, etiqueta) é outra coisa e segue a seção 2.
+- **O post sai pronto, com o texto na arte.** (21/09/2026) A chamada e o recado do dia —
+  "Hoje tem feira", o que for — são **compostos sobre a foto**. Ela abre o Instagram, sobe
+  e acabou. Endereço, horário e preço vão na legenda, porque mudam e se corrigem sem
+  regerar imagem; mas a chamada tem que estar na arte, senão não é post. A entrega é arte
+  + legenda juntas. Detalhe do método na seção 3.0 de `producao-imagem.md`.
+  **Revertida:** havia a regra oposta (19/09/2026) mandando todo texto ditado ir só para a
+  legenda. O Miquéias derrubou em 21/09/2026: *"o pôster tem que vir pronto, esse negócio
+  de o texto não vai na foto é completamente errado"*. Não voltar a ela.
 - **Chamada aprovada para peça impressa (19/09/2026, pedida pela Ana Carla):**
   `VEM VER POR DENTRO`, em caixa alta, abaixo das três linhas acima. É chamada, não frase
   de impacto: convida a olhar em vez de vender com adjetivo, e não envelhece. Vale só para
