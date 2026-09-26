@@ -171,6 +171,25 @@ A marca é o maior elemento da peça; as duas linhas de cima são subordinadas a
   de impacto: convida a olhar em vez de vender com adjetivo, e não envelhece. Vale só para
   esta frase — não reabre a porta para slogan.
 
+### Placa do carro — peça com QR de pagamento (26/09/2026)
+
+Pedida pela Ana Carla: placa **A4 deitada** para o banco do passageiro do carro de
+aplicativo, com foto, marca e o **QR do Pix**. É peça permanente e segue a seção 2 — sem
+data, sem preço, sem frase nova de venda.
+
+Duas regras que nascem dela e valem para qualquer peça com código:
+
+- o QR fica **grande, dentro de um retângulo claro**, nunca em cima da fotografia — ele é
+  lido de meio metro, com o carro andando;
+- **todo QR é conferido decodificando o arquivo final** e comparando com o original, nunca
+  no olho. QR errado só aparece com o cliente de celular na mão.
+
+Rótulo usado embaixo do código: `PAGUE PELO PIX` — é função, não slogan. Aprovação do
+Miquéias **PENDENTE**.
+
+O dado do Pix é financeiro: mora só no repositório privado da marca, **nunca nesta skill**,
+que é pública.
+
 ---
 
 ## 3. Produto
