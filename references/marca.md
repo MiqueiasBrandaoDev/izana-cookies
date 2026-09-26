@@ -36,7 +36,7 @@ Histórico de nome: `Cookies da Izana` → **`Izana Cookies`** (19/09/2026, deci
 | Cor de apoio | `#F6E8D8` creme | usada no kit v2 |
 | Cor de apoio | `#8B5A3C` chocolate médio | usada nas gotas e ilustrações |
 | Cidade / praça | — | **PENDENTE** |
-| @ do Instagram | — | **PENDENTE** |
+| @ do Instagram | **@izanacookies** (`instagram.com/izanacookies`) | confirmado 26/09/2026 pela Ana Carla |
 
 Registro no INPI: **fora de escopo** por decisão do Miquéias (19/09/2026). Não levantar de novo.
 
@@ -194,6 +194,14 @@ azuis quase iguais formam uma emenda que só aparece depois de impressa.
 
 O dado do Pix é financeiro: mora só no repositório privado da marca, **nunca nesta skill**,
 que é pública.
+
+A peça leva **dois códigos**: pagamento e Instagram. Cada um com o seu rótulo embaixo —
+`PAGUE PELO PIX` e `@izanacookies` —, e o rótulo encolhe até não encostar no do vizinho.
+Dois códigos sem rótulo claro viram armadilha: escaneia o do perfil achando que pagou.
+
+O **@ escrito acompanha o QR do perfil**, nunca sozinho um sem o outro: o código converte
+quem está com a câmera na mão agora, o @ sobrevive ao trajeto e é o que a pessoa repassa.
+Link de perfil com `?stkn=` é convite pessoal e temporário — **em peça vai o endereço limpo**.
 
 ---
 
