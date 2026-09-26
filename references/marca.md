@@ -203,6 +203,16 @@ O **@ escrito acompanha o QR do perfil**, nunca sozinho um sem o outro: o códig
 quem está com a câmera na mão agora, o @ sobrevive ao trajeto e é o que a pessoa repassa.
 Link de perfil com `?stkn=` é convite pessoal e temporário — **em peça vai o endereço limpo**.
 
+**Dois códigos na mesma peça ficam em pontas opostas** (26/09/2026, apontado pela Ana Carla).
+Leitor de QR lê o primeiro que entra no enquadramento: códigos vizinhos fazem quem quer pagar
+cair no perfil. Rótulo não resolve — quando ele é lido, o celular já leu o código errado. A
+distância é o que separa.
+
+Cada código leva **o sinal do que ele é**: o do perfil, o símbolo da câmera do Instagram
+desenhado na cor da marca, com o traço do resto da peça; o de pagamento, a palavra. De longe
+se reconhece desenho, não texto pequeno. Símbolo de rede social ao lado do código do próprio
+perfil é sinalização, não a marca de terceiro que a seção 2 proíbe.
+
 ---
 
 ## 3. Produto
