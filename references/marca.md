@@ -211,7 +211,14 @@ distância é o que separa.
 Cada código leva **o sinal do que ele é**: o do perfil, o símbolo da câmera do Instagram
 desenhado na cor da marca, com o traço do resto da peça; o de pagamento, a palavra. De longe
 se reconhece desenho, não texto pequeno. Símbolo de rede social ao lado do código do próprio
-perfil é sinalização, não a marca de terceiro que a seção 2 proíbe.
+perfil é sinalização, não a marca de terceiro que a seção 2 proíbe. Mas **símbolo só entra onde
+tem lugar na composição**: na arte aprovada ele saiu, porque solto na faixa do rodapé virava
+sujeira — ali quem identifica o código é o @ escrito embaixo dele.
+
+**Peça com QR fecha em PDF sem recompressão**, no tamanho real e a 300 dpi, e a conferência
+é feita **no PDF**: abre, rasteriza de volta e lê o código. PNG salvo direto em PDF pelo
+caminho comum recomprime em JPEG e come a borda dura do código — numa peça feita para ser
+escaneada, isso não é perda de qualidade, é a peça não funcionar.
 
 ---
 
