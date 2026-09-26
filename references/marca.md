@@ -29,6 +29,7 @@ Histórico de nome: `Cookies da Izana` → **`Izana Cookies`** (19/09/2026, deci
 |------|-------|--------|
 | Nome | **Izana Cookies** (nessa ordem) | Decidido 19/09/2026, sujeito a troca |
 | Tipografia do nome | a da logo: sans arredondada pesada, tipo groovy/retrô | arquivo em mãos desde 19/09/2026; 10 alternativas em `assets/banners/v4-fontes/` |
+| Fonte provisória de peça | **Titan One** (licença livre) | 26/09/2026 — a mais próxima do desenho da logo entre treze testadas; vale até a Izana confirmar a oficial |
 | Símbolo / logo desenhado | não há símbolo separado — a logo é wordmark, com os dois "o" de "cookies" virando cookies, o segundo mordido, gotas em coração | **aprovada** 19/09/2026 |
 | Cor da marca (azul) | `#BADCFF` azul-claro | confirmado 19/09/2026 ao aprovar a logo |
 | Cor da marca (traço) | `#622F2E` vinho escuro | adotado 19/09/2026, é a cor da letra da logo |
@@ -186,6 +187,10 @@ Duas regras que nascem dela e valem para qualquer peça com código:
 
 Rótulo usado embaixo do código: `PAGUE PELO PIX` — é função, não slogan. Aprovação do
 Miquéias **PENDENTE**.
+
+Fundo da placa: **azul da marca** (26/09/2026, pedido dela). Foto feita para sangrar num
+fundo de cor chapada tem o tom **medido e corrigido** até bater com o hex da marca — dois
+azuis quase iguais formam uma emenda que só aparece depois de impressa.
 
 O dado do Pix é financeiro: mora só no repositório privado da marca, **nunca nesta skill**,
 que é pública.
