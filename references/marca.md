@@ -35,7 +35,7 @@ Histórico de nome: `Cookies da Izana` → **`Izana Cookies`** (19/09/2026, deci
 | Cor da marca (traço) | `#622F2E` vinho escuro | adotado 19/09/2026, é a cor da letra da logo |
 | Cor de apoio | `#F6E8D8` creme | usada no kit v2 |
 | Cor de apoio | `#8B5A3C` chocolate médio | usada nas gotas e ilustrações |
-| Cidade / praça | — | **PENDENTE** |
+| Cidade / praça | **Garavelo e região** | decidido 26/09/2026 pela Ana Carla, ao pedir a campanha do bairro |
 | @ do Instagram | **@izanacookies** (`instagram.com/izanacookies`) | confirmado 26/09/2026 pela Ana Carla |
 
 Registro no INPI: **fora de escopo** por decisão do Miquéias (19/09/2026). Não levantar de novo.
