@@ -220,6 +220,12 @@ sujeira — ali quem identifica o código é o @ escrito embaixo dele.
 caminho comum recomprime em JPEG e come a borda dura do código — numa peça feita para ser
 escaneada, isso não é perda de qualidade, é a peça não funcionar.
 
+**Código de pagamento montado aqui (não copiado do banco) passa por três provas** antes de
+virar peça: o cálculo do dígito verificador é validado contra um código que já funciona, o
+conteúdo é reaberto campo a campo, e o arquivo final é lido de volta. E a peça é entregue
+**pedindo que a dona confira o nome no app do banco** — o código pode estar perfeito e a
+chave não estar cadastrada. Nenhuma conferência daqui substitui essa.
+
 ---
 
 ## 3. Produto
