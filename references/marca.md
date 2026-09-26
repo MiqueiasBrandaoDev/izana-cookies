@@ -167,6 +167,11 @@ A marca é o maior elemento da peça; as duas linhas de cima são subordinadas a
   **Revertida:** havia a regra oposta (19/09/2026) mandando todo texto ditado ir só para a
   legenda. O Miquéias derrubou em 21/09/2026: *"o pôster tem que vir pronto, esse negócio
   de o texto não vai na foto é completamente errado"*. Não voltar a ela.
+- **Anúncio de venda diz que entrega, e não usa "Aqui tem" (26/09/2026, decisão da
+  Ana Carla).** Na arte de post da campanha o recado é `ENTREGA NO GARAVELO E REGIÃO` —
+  ou "entregamos", ou "fazemos entrega", a forma varia. `Aqui tem` continua valendo só na
+  peça impressa, que fica pendurada onde o cookie está; o anúncio faz o caminho inverso,
+  e quem lê precisa saber que o cookie vai até ela.
 - **Chamada aprovada para peça impressa (19/09/2026, pedida pela Ana Carla):**
   `VEM VER POR DENTRO`, em caixa alta, abaixo das três linhas acima. É chamada, não frase
   de impacto: convida a olhar em vez de vender com adjetivo, e não envelhece. Vale só para
