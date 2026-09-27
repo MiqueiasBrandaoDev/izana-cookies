@@ -231,6 +231,34 @@ pedido ao modelo já saiu "rechado", sem o "e".
 Gere a foto limpa com `ESPACO_TIPOGRAFIA`, que deixa a metade de cima vazia, e escreva
 por cima em código.
 
+### 3.0.2 O produto entra recortado, não como retângulo (27/09/2026)
+
+Peça montada com a fotografia inteira, de fundo e tudo, parece colada. O que muda o
+patamar é **tirar o fundo do estúdio e pousar o cookie no fundo da peça**, com uma sombra
+de contato desenhada ali embaixo — sem a sombra ele flutua sem peso.
+
+Para recortar, **não meça distância até uma cor média**: o fundo tem gradiente de luz e a
+sombra de contato é escura demais para passar por fundo, então sobra um retângulo grudado
+embaixo do produto — e ele aparece na peça. O critério que funciona:
+
+> **fundo é o que é claro E está ligado à borda da foto.**
+
+Binariza a luminância, preenche a partir das quinas e das bordas, e o que ficou marcado é
+fundo. O cookie é escuro; os brilhos claros do recheio ficam presos dentro dele, longe da
+borda, e por isso não somem. Depois encolhe a silhueta uns 5 px (a franja da borda carrega
+a cor do fundo antigo e denuncia o recorte) e borra 1,6 px.
+
+Implementado em `marketing/banners/2026-09-27-feira/_base.py`, função `recortar()`.
+
+**Em fundo escuro, o produto escuro some.** Um clarão suave atrás — `halo()` no mesmo
+arquivo — devolve a silhueta sem clarear a peça.
+
+### 3.0.3 Duas vozes tipográficas
+
+Peça inteira numa fonte de display vira ruído. O padrão é **display pesado para a marca e
+a chamada, rounded sans neutra para linha pequena e faixa de serviço**. Os nomes vêm de
+`marca.md`, nunca daqui.
+
 ### 3.1 Só o texto aprovado
 
 O modelo adiciona slogan sozinho se você deixar espaço. Feche a porta:
