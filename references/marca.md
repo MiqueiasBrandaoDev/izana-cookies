@@ -31,6 +31,8 @@ Histórico de nome: `Cookies da Izana` → **`Izana Cookies`** (19/09/2026, deci
 | Tipografia do nome | a da logo: sans arredondada pesada, tipo groovy/retrô | arquivo em mãos desde 19/09/2026; 10 alternativas em `assets/banners/v4-fontes/` |
 | Fonte provisória de peça | **Titan One** (licença livre) | 26/09/2026 — a mais próxima do desenho da logo entre treze testadas; vale até a Izana confirmar a oficial |
 | Fonte de apoio da peça | **Quicksand** (licença livre) | 27/09/2026 — a segunda voz, arredondada e neutra, para linha pequena e faixa de serviço; provisória como a Titan One |
+| Script na peça | **liberada como segunda voz** (Candice, Sacramento), nunca no nome da marca | 27/09/2026, pedido da Ana Carla: a proibição de manuscrito vale para a logo; na peça a script dela entra nas linhas de apoio contra uma display gorda |
+| Fontes que ela usa nos posts | Nectarine, Genty, Ketchup Manis, Candice, Safira March, Sacramento (+ Lucky Bones, Spiro, Scripter, não encontradas) | 27/09/2026 — versões gratuitas são de uso pessoal; para impressão, licença comercial ou finalizar no Canva dela |
 | Símbolo / logo desenhado | não há símbolo separado — a logo é wordmark, com os dois "o" de "cookies" virando cookies, o segundo mordido, gotas em coração | **aprovada** 19/09/2026 |
 | Cor da marca (azul) | `#BADCFF` azul-claro | confirmado 19/09/2026 ao aprovar a logo |
 | Cor da marca (traço) | `#622F2E` vinho escuro | adotado 19/09/2026, é a cor da letra da logo |
