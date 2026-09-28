@@ -134,6 +134,7 @@ Feito dos arquivos aprovados por limiar, sem redesenho.
 
 **Trocado no mesmo dia (28/09/2026):** a medida de 13,3 × 15,6 foi reprovada por ela. O carimbo é
 **quadrado, 10 × 10 cm**, no centro da sacola. Carimbo é peça pequena — pergunte a medida antes de calcular.
+Duas versões aguardando a escolha dela: irmãs de óculos e irmãs de olhos fechados (as da padronagem).
 
 ### 1.3 Embalagem — regra permanente (19/09/2026)
 
