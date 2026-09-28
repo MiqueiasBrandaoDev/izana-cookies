@@ -64,8 +64,8 @@ Para habilitar também o envio por WhatsApp, acrescente:
 Sem esses dois blocos a skill continua funcionando: ela gera normalmente e entrega os
 arquivos localmente, sem tentar enviar.
 
-Para a skill puxar as imagens que chegam no grupo "Banco De Dados - IZANA" do WhatsApp
-(`scripts/banco.py`), acrescente:
+Para a skill puxar o que chega no grupo "Banco De Dados - IZANA" do WhatsApp (texto,
+áudio transcrito, imagem, vídeo e documento, via `scripts/banco.py`), acrescente:
 
 ```json
 {
@@ -89,7 +89,7 @@ references/marca.md             fonte única da verdade da marca
 references/producao-imagem.md   o método inteiro, passo a passo
 scripts/referencia.py           baixa e fatia referência de qualquer fonte
 scripts/gerar.py                gera imagem com gpt-image
-scripts/banco.py                puxa as imagens do grupo Banco De Dados do WhatsApp
+scripts/banco.py                puxa o que chega no grupo Banco De Dados do WhatsApp
 ```
 
 Os assets (fotos, banners, referências, cerca de 150 MB) ficam **fora** do repositório,

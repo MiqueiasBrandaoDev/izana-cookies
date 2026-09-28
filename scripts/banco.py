@@ -1,27 +1,33 @@
-"""Puxa as imagens que chegaram no grupo "Banco De Dados - IZANA" do WhatsApp.
+"""Puxa o que chegou no grupo "Banco De Dados - IZANA" do WhatsApp.
 
-A Ana Carla manda as fotos no grupo e diz "mandei no banco de dados". Este script
-busca o que ela mandou e salva em disco para o Claude abrir e analisar.
+A Ana Carla manda no grupo o que tiver na mão, inclusive na rua: foto, áudio,
+recado de texto, vídeo, PDF. Depois diz "mandei no banco de dados". Este script
+traz tudo na ordem em que ela mandou, como uma conversa:
 
-Ele só enxerga aquele grupo. Não fala com a Evolution nem com o banco do Resumefy:
-fala com um portão (webhook) que já sabe qual é o grupo e barra qualquer outro chat.
-O endereço e o token do portão ficam no cofre, bloco "izana_banco".
+    texto      aparece direto
+    áudio      aparece transcrito
+    imagem     salva em disco, com a legenda e uma descrição do que tem nela
+    vídeo      salvo em disco (fatie com referencia.py se precisar)
+    documento  salvo em disco com o nome original
 
-Cada imagem tem um estado: nova ou lida. Imagem lida sai da lista de novas, mas pode
-ser relida a qualquer momento com `reler`.
+Ele só enxerga aquele grupo. Não fala com a Evolution nem com os bancos do
+Resumefy: fala com um portão (webhook) que conhece só aquele grupo e barra
+qualquer outro chat. Endereço e token do portão ficam no cofre, bloco "izana_banco".
+
+Cada item é novo ou lido. Item lido sai de `novas`, mas pode ser relido com `reler`.
 
 Uso:
-    python banco.py novas              baixa as que ainda não foram lidas e marca como lidas
-    python banco.py lista              mostra as não lidas, numeradas, sem baixar
-    python banco.py lista --todas      mostra todas, com quantas vezes cada uma foi lida
-    python banco.py reler 3 5          baixa de novo as de número 3 e 5 (numeração do `lista --todas`)
+    python banco.py novas              traz o que ainda não foi lido e marca como lido
+    python banco.py lista              mostra o que não foi lido, numerado, sem baixar
+    python banco.py lista --todas      mostra tudo, com quantas vezes cada item foi lido
+    python banco.py reler 3 5          traz de novo os itens 3 e 5 (numeração do `lista --todas`)
     python banco.py reler <id>         também aceita o id da mensagem
-    python banco.py reler --ultimas 4  baixa de novo as 4 mais recentes
+    python banco.py reler --ultimas 4  traz de novo os 4 mais recentes
 
-    --saida <pasta>   onde salvar (padrão: banco/ dentro da skill)
-    --nao-marcar      baixa sem marcar como lida
+    --saida <pasta>   onde salvar arquivos (padrão: banco/ dentro da skill)
+    --nao-marcar      traz sem marcar como lido
 """
-import base64, json, os, sys
+import base64, json, os, re, sys
 from datetime import datetime
 import requests
 
@@ -34,12 +40,16 @@ if not CFG or not CFG.get("url") or not CFG.get("token"):
     sys.exit('credentials.json precisa do bloco "izana_banco": {"url": "...", "token": "..."}')
 
 SKILL = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-EXT = {"image/jpeg": ".jpg", "image/png": ".png", "image/webp": ".webp", "image/heic": ".heic"}
+EXT = {"image/jpeg": ".jpg", "image/png": ".png", "image/webp": ".webp", "image/heic": ".heic",
+       "video/mp4": ".mp4", "audio/ogg": ".ogg", "audio/mpeg": ".mp3", "audio/mp4": ".m4a",
+       "application/pdf": ".pdf"}
+ROTULO = {"texto": "TEXTO", "audio": "ÁUDIO", "imagem": "IMAGEM", "video": "VÍDEO",
+          "documento": "DOCUMENTO"}
 
 
 def portao(acao, **corpo):
     r = requests.post(CFG["url"], headers={"x-izana-token": CFG["token"]},
-                      json={"acao": acao, **corpo}, timeout=180)
+                      json={"acao": acao, **corpo}, timeout=300)
     if r.status_code == 403:
         sys.exit("o portão recusou o token: confira o bloco izana_banco do cofre")
     r.raise_for_status()
@@ -53,40 +63,91 @@ def quando(iso):
     return datetime.fromisoformat(iso).astimezone().strftime("%d/%m %H:%M") if iso else "?"
 
 
-def baixar(img, pasta):
-    d = portao("baixar", id=img["message_id"])
+def duracao(s):
+    return f" {s // 60}:{s % 60:02d}" if s else ""
+
+
+def baixar(item, pasta):
+    d = portao("baixar", id=item["message_id"])
     if not d.get("base64"):
         raise RuntimeError("o WhatsApp não devolveu o arquivo (a mídia pode ter expirado)")
-    carimbo = datetime.fromisoformat(img["enviada_em"]).astimezone().strftime("%Y-%m-%d_%H%M%S")
-    nome = f"{carimbo}_{img['message_id'][-6:]}{EXT.get(d.get('mimetype'), '.jpg')}"
+    carimbo = datetime.fromisoformat(item["enviada_em"]).astimezone().strftime("%Y-%m-%d_%H%M%S")
+    mime = (d.get("mimetype") or item.get("mimetype") or "").split(";")[0].strip()
+    if item.get("nome_arquivo"):
+        base = re.sub(r'[<>:"/\\|?*]', "_", item["nome_arquivo"])
+        nome = f"{carimbo}_{base}"
+    else:
+        nome = f"{carimbo}_{item['message_id'][-6:]}{EXT.get(mime, '.bin')}"
     caminho = os.path.join(pasta, nome)
     with open(caminho, "wb") as f:
         f.write(base64.b64decode(d["base64"]))
     return caminho
 
 
-def imprimir(imagens, numeros=True):
-    for n, i in enumerate(imagens, 1):
-        estado = f"lida {i['vezes_lida']}x" if i.get("lida_em") else "NOVA"
-        legenda = f' | "{i["legenda"]}"' if i.get("legenda") else ""
-        print(f"{n:3d}. {quando(i['enviada_em'])}  {estado:9s} {i.get('remetente') or '?'}"
-              f"  id={i['message_id']}{legenda}")
+def transcrever_local(caminho):
+    """Reserva: o hub costuma já ter transcrito. Só roda quando não transcreveu."""
+    key = [k for k in CREDS["openai"]["keys"] if k["name"] == "core-resumefy"][0]["key"]
+    with open(caminho, "rb") as f:
+        r = requests.post("https://api.openai.com/v1/audio/transcriptions",
+                          headers={"Authorization": f"Bearer {key}"},
+                          files={"file": (os.path.basename(caminho), f)},
+                          data={"model": "whisper-1", "language": "pt"}, timeout=300)
+    r.raise_for_status()
+    return r.json().get("text", "").strip()
 
 
-def puxar(alvos, pasta, marcar):
+def cabecalho(n, item):
+    estado = f"lido {item['vezes_lida']}x" if item.get("lida_em") else "novo"
+    return (f"\n── nº {n}  {quando(item['enviada_em'])}  {item.get('remetente') or '?'}  "
+            f"{ROTULO.get(item['tipo'], item['tipo'].upper())}{duracao(item.get('duracao_s'))}  ({estado})")
+
+
+def mostrar(n, item, pasta):
+    """Imprime o item e devolve True se ele pôde ser entregue por inteiro."""
+    print(cabecalho(n, item))
+    tipo, texto = item["tipo"], item.get("texto")
+    if tipo == "texto":
+        print(f"   {texto}")
+        return True
+    try:
+        if tipo == "audio":
+            transcricao = item.get("transcricao")
+            if not transcricao:
+                caminho = baixar(item, pasta)
+                transcricao = transcrever_local(caminho)
+                portao("transcricao", id=item["message_id"], texto=transcricao)
+            print(f'   transcrição: "{transcricao}"')
+            return True
+        caminho = baixar(item, pasta)
+        print(f"   arquivo: {caminho}")
+        if texto:
+            print(f'   legenda: "{texto}"')
+        if item.get("descricao"):
+            print(f"   descrição automática (confira na imagem): {item['descricao']}")
+        if tipo == "video":
+            print("   para ver os quadros e ouvir: python <skill>/scripts/referencia.py "
+                  f'"{caminho}" --saida <pasta>')
+        return True
+    except Exception as e:
+        print(f"   FALHA: {e}")
+        return False
+
+
+def entregar(itens, numeros, pasta, marcar):
     os.makedirs(pasta, exist_ok=True)
-    ok = []
-    for img in alvos:
-        try:
-            caminho = baixar(img, pasta)
-            ok.append(img["message_id"])
-            legenda = f' | legenda: "{img["legenda"]}"' if img.get("legenda") else ""
-            print(f"OK    {quando(img['enviada_em'])}  {caminho}{legenda}")
-        except Exception as e:
-            print(f"FALHA {quando(img['enviada_em'])}  id={img['message_id']}  {e}")
+    ok = [it["message_id"] for n, it in zip(numeros, itens) if mostrar(n, it, pasta)]
     if marcar and ok:
         portao("marcar", ids=ok)
-    print(f"\n{len(ok)} de {len(alvos)} baixada(s)" + (" e marcada(s) como lida(s)" if marcar and ok else ""))
+    print(f"\n{len(ok)} de {len(itens)} item(ns) entregue(s)"
+          + (" e marcado(s) como lido(s)" if marcar and ok else ""))
+
+
+def listar(itens):
+    for n, it in enumerate(itens, 1):
+        resumo = it.get("texto") or it.get("transcricao") or it.get("nome_arquivo") or ""
+        resumo = " ".join(resumo.split())
+        resumo = f' | "{resumo[:80]}{"…" if len(resumo) > 80 else ""}"' if resumo else ""
+        print(cabecalho(n, it).strip() + resumo)
 
 
 if __name__ == "__main__":
@@ -112,34 +173,35 @@ if __name__ == "__main__":
         i += 1
 
     if cmd == "lista":
-        imagens = portao("listar", todas=todas)["imagens"]
-        if not imagens:
-            print("nenhuma imagem " + ("no grupo" if todas else "nova no grupo"))
-        imprimir(imagens)
+        itens = portao("listar", todas=todas)["itens"]
+        if not itens:
+            print("nada " + ("no grupo" if todas else "novo no grupo"))
+        listar(itens)
 
     elif cmd == "novas":
-        imagens = portao("listar")["imagens"]
-        if not imagens:
-            print("nenhuma imagem nova no grupo")
+        itens = portao("listar")["itens"]
+        if not itens:
+            print("nada novo no grupo")
         else:
-            puxar(imagens, pasta, marcar)
+            entregar(itens, range(1, len(itens) + 1), pasta, marcar)
 
     elif cmd == "reler":
-        imagens = portao("listar", todas=True)["imagens"]
+        itens = portao("listar", todas=True)["itens"]
         if ultimas:
-            alvos = imagens[-ultimas:]
+            base = len(itens) - ultimas
+            alvos = [(base + k + 1, it) for k, it in enumerate(itens[-ultimas:])]
         else:
-            por_id = {x["message_id"]: x for x in imagens}
+            por_id = {x["message_id"]: (k, x) for k, x in enumerate(itens, 1)}
             alvos = []
             for e in escolhidos:
-                if e.isdigit() and 1 <= int(e) <= len(imagens):
-                    alvos.append(imagens[int(e) - 1])
+                if e.isdigit() and 1 <= int(e) <= len(itens):
+                    alvos.append((int(e), itens[int(e) - 1]))
                 elif e in por_id:
                     alvos.append(por_id[e])
                 else:
-                    print(f"não achei a imagem {e} (rode `lista --todas` para ver os números)")
+                    print(f"não achei o item {e} (rode `lista --todas` para ver os números)")
         if alvos:
-            puxar(alvos, pasta, marcar)
+            entregar([a[1] for a in alvos], [a[0] for a in alvos], pasta, marcar)
 
     else:
         sys.exit(f"comando desconhecido: {cmd}\n{__doc__}")
