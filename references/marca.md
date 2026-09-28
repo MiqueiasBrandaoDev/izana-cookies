@@ -71,11 +71,16 @@ cor só.
 
 **28/09/2026 — versão branca sem fundo feita**, a pedido da Ana Carla:
 `marketing/marca/logo-izana-cookies-branca-sem-fundo.png` (3138×1600, PNG transparente),
-tirada da logo aprovada por `marketing/marca/_logo_branca.py` — a luminância do arquivo
+tirada da logo aprovada por `marketing/marca/_logo_sem_fundo.py` — a luminância do arquivo
 vira o alfa, nada é redesenhado, o miolo dos cookies fica vazado. Serve para foto e fundo
 escuro. Ela recebe o PNG **como documento** no WhatsApp: mandado como imagem, o WhatsApp
 vira JPG e o transparente sai preto. Versão em vinho e em creme sem fundo já existiam para
 a lona (`marketing/banners/2026-09-27-feira-v3/para-canva/`).
+
+**28/09/2026 — versão azul sem fundo**, também a pedido dela: as letras no azul da marca
+`#BADCFF`, mesmo método e mesmo tamanho, em
+`marketing/marca/logo-izana-cookies-azul-sem-fundo.png`. É para fundo escuro — sobre o
+creme ou o branco o azul claro some. Nova cor é só uma linha em `CORES` no script.
 
 **Histórico — logo anterior (descrita em 19/09/2026, substituída no mesmo dia):** duas
 meninas de rosto colado segurando juntas um cookie grande, traço de contorno grosso, sobre
