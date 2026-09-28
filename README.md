@@ -64,6 +64,19 @@ Para habilitar também o envio por WhatsApp, acrescente:
 Sem esses dois blocos a skill continua funcionando: ela gera normalmente e entrega os
 arquivos localmente, sem tentar enviar.
 
+Para a skill puxar as imagens que chegam no grupo "Banco De Dados - IZANA" do WhatsApp
+(`scripts/banco.py`), acrescente:
+
+```json
+{
+  "izana_banco": { "url": "https://.../webhook/izana-banco", "token": "..." }
+}
+```
+
+O endereço é um portão que só conhece aquele grupo e barra qualquer outro chat. O token
+fica no cofre da máquina do Miquéias, no mesmo bloco. Ele não dá acesso à Evolution nem
+ao banco do Resumefy.
+
 Se o arquivo já existir na máquina, **mescle os blocos** em vez de substituir.
 Salve como **UTF-8 sem BOM** — com BOM o Python não lê o cofre. No PowerShell, não use
 `Out-File` nem `Set-Content` para editá-lo: eles gravam BOM.
@@ -76,6 +89,7 @@ references/marca.md             fonte única da verdade da marca
 references/producao-imagem.md   o método inteiro, passo a passo
 scripts/referencia.py           baixa e fatia referência de qualquer fonte
 scripts/gerar.py                gera imagem com gpt-image
+scripts/banco.py                puxa as imagens do grupo Banco De Dados do WhatsApp
 ```
 
 Os assets (fotos, banners, referências, cerca de 150 MB) ficam **fora** do repositório,

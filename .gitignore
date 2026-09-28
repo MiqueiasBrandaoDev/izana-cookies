@@ -20,3 +20,6 @@ credentials.json
 
 # JPGs temporarios que o wpp_media.py gera antes de enviar.
 scripts/wpp_tmp/
+
+# imagens puxadas do grupo Banco De Dados pelo banco.py
+/banco/
