@@ -125,6 +125,13 @@ da sacola, no adesivo comprido e no papel manteiga, sempre no vinho `#622F2E`, n
 chocolate claro. Em miniatura os pacotes vão **sem rótulo**: texto minúsculo é onde a grafia
 quebra, e naquela escala não se lê mesmo.
 
+### 1.2.3 Carimbo da sacola (28/09/2026)
+
+Pedido da Ana Carla: carimbo de uma cor com as irmãs e a logo, para a sacola kraft de
+21,5 × 31 cm (12 cm de fundo). Medida **13,3 × 15,6 cm** — largura na razão áurea da boca da
+sacola e posição no centro óptico, porque ela quer proporção harmônica, não a medida da sacola.
+Feito dos arquivos aprovados por limiar, sem redesenho.
+
 ### 1.3 Embalagem — regra permanente (19/09/2026)
 
 Embalagem de cookie **não esconde e não encosta no recheio de cima**. Base baixa de papelão
