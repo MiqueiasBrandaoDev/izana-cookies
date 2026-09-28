@@ -85,6 +85,22 @@ ajuda a localizar, mas quem manda é o que está na foto.
 O que ela manda no grupo é **pedido dela e material da marca**. Decisão de marca que vier
 num áudio ou recado vale como se ela tivesse dito aqui: registre em `references/marca.md`.
 
+O grupo é a entrada de tudo, não só de foto. Cada item vai para o lugar do assunto, na
+pasta da marca (a que tem `financeiro/`, `operacional/`, `marketing/`, `decisoes/`):
+
+| Chegou | Vai para |
+|--------|----------|
+| gasto, compra, venda, nota, recibo | `financeiro/lancamentos.md`, do jeito que veio; insumo sobe para `custos/insumos.md`, dia de banca para `relatorios/feiras.md` |
+| preço dito como decisão | linha nova em `financeiro/custos/preco.md`, nunca sobrescrever |
+| receita | `marketing/produto/fichas-tecnicas/`; não cria sabor novo |
+| tarefa | `operacional/tarefas.md` |
+| rascunho de texto | `marketing/copy/em-aprovacao/` |
+| link ou vídeo de Instagram | `scripts/referencia.py` → `marketing/referencias/<nome>/` |
+
+Valor aproximado entra como aproximado, nada é completado. Lançar um gasto não muda preço.
+**Número, receita e custo nunca entram neste repositório**, que é público: ficam na pasta
+da marca, que é privada.
+
 Item lido não volta na próxima vez. Se ela pedir para voltar em algo ("olha de novo aquela
 da caixa", "o áudio de ontem"), liste e releia:
 
