@@ -247,6 +247,10 @@ perfil é sinalização, não a marca de terceiro que a seção 2 proíbe. Mas *
 tem lugar na composição**: na arte aprovada ele saiu, porque solto na faixa do rodapé virava
 sujeira — ali quem identifica o código é o @ escrito embaixo dele.
 
+**PDF colorido leva perfil sRGB embutido** (28/09/2026). Sem ele o PDF sai como "RGB do aparelho"
+e cada leitor interpreta o `#BADCFF` do seu jeito — a Ana Carla viu o azul do adesivo diferente do
+da logo com o número exato. O perfil diz em que padrão a cor está.
+
 **Peça com QR fecha em PDF sem recompressão**, no tamanho real e a 300 dpi, e a conferência
 é feita **no PDF**: abre, rasteriza de volta e lê o código. PNG salvo direto em PDF pelo
 caminho comum recomprime em JPEG e come a borda dura do código — numa peça feita para ser
