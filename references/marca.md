@@ -69,6 +69,14 @@ Cores medidas no arquivo:
 **PENDENTE:** versão com fundo transparente; versão monocromática para aplicação em uma
 cor só.
 
+**28/09/2026 — versão branca sem fundo feita**, a pedido da Ana Carla:
+`marketing/marca/logo-izana-cookies-branca-sem-fundo.png` (3138×1600, PNG transparente),
+tirada da logo aprovada por `marketing/marca/_logo_branca.py` — a luminância do arquivo
+vira o alfa, nada é redesenhado, o miolo dos cookies fica vazado. Serve para foto e fundo
+escuro. Ela recebe o PNG **como documento** no WhatsApp: mandado como imagem, o WhatsApp
+vira JPG e o transparente sai preto. Versão em vinho e em creme sem fundo já existiam para
+a lona (`marketing/banners/2026-09-27-feira-v3/para-canva/`).
+
 **Histórico — logo anterior (descrita em 19/09/2026, substituída no mesmo dia):** duas
 meninas de rosto colado segurando juntas um cookie grande, traço de contorno grosso, sobre
 fundo preto, com respingos azul e vermelho. O arquivo dela nunca chegou. A duas irmãs de
