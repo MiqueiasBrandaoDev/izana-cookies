@@ -153,6 +153,20 @@ Use sempre este bloco:
 > fudgy surface. They must NOT look dry, sandy, crumbly or over-baked. Do NOT scatter loose
 > crumbs around the scene. Keep the surface around the cookies clean.
 
+### 2.3.1 Farelo na base, quando ela pedir (28/09/2026)
+
+A proibição de farelo continua — mas ela é sobre **o cookie**, não sobre a cena. Quando a
+Ana Carla pedir pedaços de chocolate e farelo para dar realidade, dá para atender sem
+ressecar nada, separando as duas coisas no mesmo prompt:
+
+> AT THE BASE, on the surface around the bottom cookie: scattered broken pieces of
+> chocolate, chocolate chunks and cookie crumbs, arranged naturally.
+>
+> CRITICAL: the cookies themselves must look MOIST, SOFT and FRESH (...). The crumbs
+> belong ONLY to the surface at the base, never on the cookies.
+
+Farelo em cima do cookie segue proibido: é ele que resseca a imagem inteira.
+
 ### 2.4 Cookie inteiro
 
 > Every cookie is WHOLE and UNBROKEN — do not break, split or cut any cookie open.
@@ -325,12 +339,41 @@ Confere composição e a foto.
 
 ---
 
+### 4.4 Arte recebida pronta: medir a foto antes de imprimir
+
+Arte que chega montada por ela vem de editor de tela, e lá a foto pode estar em qualquer
+resolução. Abra o PDF, veja a largura em px da imagem e o tamanho em que ela foi colocada:
+
+```python
+import fitz
+d = fitz.open(arquivo); p = d[0]
+for img in p.get_images(full=True):
+    print(img[2], "px de largura, colocada em", p.get_image_rects(img[0]))
+```
+
+Largura em px ÷ largura em polegadas = o dpi real daquela foto. Abaixo de 150 não vai para
+gráfica: em tela ninguém vê, impresso borra.
+
+**Mexer numa arte dela é cirurgia, não redesenho.** Rasterize a página a 300 dpi — assim
+tipografia, marca e texto continuam os dela, sem troca de fonte — e troque só o que
+precisa. Para apagar a foto antiga, não use a silhueta: a sombra embutida fica fora do
+contorno e sobra um borrão. Dentro da zona da foto, apague **tudo menos o que é dela** —
+o texto claro e pouco alaranjado sobrevive, massa, chocolate e sombra não.
+
+Fonte embutida em PDF vem em **subconjunto**, só com as letras usadas: não dá para digitar
+uma letra acentuada que ela não escreveu. Se faltar acento, recorte o acento de outra
+palavra da mesma linha.
+
 ## Parte 5 — Entregar
 
 Sempre para os dois, sem precisar pedir:
 
 ```
 python ~/.claude/scripts/wpp_media.py --para=miqueias,izana "arquivo.png::legenda"
+
+# arquivo de gráfica (PDF) vai como documento, intacto — nunca por wpp_media.py,
+# que converte tudo para JPG reduzido
+python ~/.claude/skills/izana-cookies/scripts/wpp_doc.py --para=miqueias,izana "arte.pdf::legenda"
 ```
 
 Mande primeiro o painel com tudo junto, depois as peças individuais na mesma ordem.
