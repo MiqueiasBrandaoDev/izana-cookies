@@ -264,6 +264,27 @@ chave não estar cadastrada. Nenhuma conferência daqui substitui essa.
 
 ---
 
+### Cartão fidelidade — selo colado, não carimbo (21/10/2026)
+
+Decidido pelo Miquéias em 21/10/2026, depois de comparar com a página digital (descartada por
+ora) e com o carimbo:
+
+- **10 compras = 1 cookie grátis.** Cartão físico **9 × 5 cm, só frente**, no visual do cartão
+  de agradecimento (moldura xadrez azul e vinho, fundo azul, logo).
+- Cada compra é marcada com um **mini adesivo (selo)** colado num dos 10 espaços.
+- **O cartão manda no tamanho:** o tamanho do cartão de visita define os espaços, e o selo tem
+  o diâmetro do espaço menos 1 mm, para assentar dentro do círculo.
+- O selo traz o **cookie visto de cima** com **as irmãs ou o nome da marca**. Sai dos arquivos
+  aprovados, sem redesenho, como manda a seção 1.2.1.
+- **Delivery:** vai o cartão e o selo solto. Quem já tem cartão cola o selo no dela.
+- **Texto aprovado pelo Miquéias:** `CARTÃO FIDELIDADE` · `10 selos = 1 cookie grátis` ·
+  `@izanacookies` · `Peça pelo WhatsApp <número de pedido>`. O número fica só no repositório
+  privado da marca.
+- **PENDENTE (Ana Carla):** o que conta como 1 compra (pedido ou cookie), qual cookie é o prêmio
+  e se o cartão tem validade.
+
+---
+
 ## 3. Produto
 
 Argumento de venda: **a maioria dos cookies tem recheio dentro.**
