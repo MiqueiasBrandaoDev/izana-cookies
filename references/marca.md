@@ -269,8 +269,10 @@ chave não estar cadastrada. Nenhuma conferência daqui substitui essa.
 Decidido pelo Miquéias em 21/10/2026, depois de comparar com a página digital (descartada por
 ora) e com o carimbo:
 
-- **10 compras = 1 cookie grátis.** Cartão físico **9 × 5 cm, só frente**, no visual do cartão
-  de agradecimento (moldura xadrez azul e vinho, fundo azul, logo).
+- **10 compras = 1 cookie grátis.** Cartão físico **9 × 5 cm, frente e verso**, no visual do
+  cartão de agradecimento (moldura xadrez azul e vinho, fundo azul, logo).
+- **Frente:** só a logo, sobre a padronagem miúda do papel manteiga (seção 1.2.2). **Verso:** os
+  10 espaços e o texto. Mudou de "só frente" para frente e verso no mesmo dia, a pedido do Miquéias.
 - Cada compra é marcada com um **mini adesivo (selo)** colado num dos 10 espaços.
 - **O cartão manda no tamanho:** o tamanho do cartão de visita define os espaços, e o selo tem
   o diâmetro do espaço menos 1 mm, para assentar dentro do círculo.
