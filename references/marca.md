@@ -149,6 +149,16 @@ Feito dos arquivos aprovados por limiar, sem redesenho.
 **quadrado, 10 × 10 cm**, no centro da sacola. Carimbo é peça pequena — pergunte a medida antes de calcular.
 Duas versões aguardando a escolha dela: irmãs de óculos e irmãs de olhos fechados (as da padronagem).
 
+### 1.2.4 Irmãs coloridas com pele natural, sem fundo (24/10/2026)
+
+Pedido: as irmãs da v3 (cabelo curto no ombro com franja e cabelo comprido, óculos retangulares)
+redesenhadas com volume, **pele clara pêssego natural**, cabelo castanho de verdade, blusa marrom na
+de cabelo curto e azul `#BADCFF` na de cabelo comprido, cookie dourado de gotas redondas, PNG
+transparente sem logo. O cabelo castanho claro da primeira rodada foi **reprovado** ("muito feio"):
+o cabelo é **castanho escuro**. Três opções em
+`marketing/marca/identidade-v2/ilustracoes/ilu-duas-irmas-v7-cabelo-escuro-sem-fundo-{1,2,3}.png`.
+Escolha **PENDENTE**. PNG transparente vai pelo WhatsApp **como documento**.
+
 ### 1.3 Embalagem — regra permanente (19/09/2026)
 
 Embalagem de cookie **não esconde e não encosta no recheio de cima**. Base baixa de papelão
